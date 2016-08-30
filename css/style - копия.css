@@ -1,0 +1,336 @@
+/*-----------------*/
+/* Глобальное */
+/*-----------------*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {    
+}
+
+
+/*-----------------*/
+/* Шапка */
+/*-----------------*/
+
+#navbar-header {
+    height: 58px !important;
+}
+
+#container-top-menu {
+    max-width: 1024px !important;
+}
+
+#navbar-brand {
+    width: 190px !important;
+    height: 58px !important;
+    padding: 0 !important;
+    margin-right: 20px !important;
+}
+
+#menu-top {
+    background: url('../img/navbar_bg.png') repeat; 
+}
+
+ #menu-top-dark {
+    background: #3B6872;
+}
+
+@media (max-width:768px){
+    #menu-top {
+    background: #3B6872;
+    }
+    #menu-top-dark {
+    background: #3B6872;
+    }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white;
+}
+
+.navbar-default, .navbar-toggle, .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border: 0px !important; 
+}
+
+.navbar-right {
+    position: relative;
+
+    margin-right: 15px;
+}
+#nav-links {
+    margin: 0;
+}
+
+#nav-links li, #nav-links li a {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-size: 18px !important;
+    color: #f5f5f5;
+    height: 58px !important;
+}
+
+#nav-links li a {
+    padding-top: 18px;
+}
+
+#nav-links li a:hover {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.navbar-toggle {
+    padding: 0 !important;
+    margin: 0 5px 0 0 !important; 
+}
+
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    padding: 0;
+}
+
+#nav-btn {
+    width: 59px !important; 
+    height: 58px !important; 
+    padding: 0 !important; 
+    background: none;
+}
+
+.navbar-toggle:hover {
+    border-radius: 0;
+    background: url('../img/nav_btn_bg.png') no-repeat !important;
+}
+
+.navbar-toggle:active {
+    border-radius: 0;
+    background: url('../img/nav_btn_bg.png') no-repeat !important;
+}
+
+.navbar-toggle:focus {
+    border-radius: 0;
+    background: url('../img/nav_btn_bg.png') no-repeat !important;
+}
+
+
+#nav-btn:hover {
+    background: url('../img/nav_btn_bg.png') no-repeat !important; 
+}
+
+#nav-btn:active {
+    background: url('../img/nav_btn_bg.png') no-repeat !important; 
+}
+
+#nav-btn:focus {
+    background: url('../img/nav_btn_bg.png') no-repeat !important; 
+}
+
+span.icon-bar {
+    height: 3px !important;
+}
+
+#slider {
+    background: #FFF url("../img/slider_1.png") no-repeat !important;
+    background-size: cover !important; 
+}
+
+.jumbotron {
+    height: 482px;
+    padding: 58px 0 0 0 !important;
+    background: none !important;
+    margin-bottom: 0 !important;
+}
+
+#slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;*/
+    max-width: 1024px !important;
+    height: 424px;
+    padding-left: 30px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    #slider-content {
+    max-width: 1024px !important;
+    height: 424px;
+    padding-left: 30px;
+    padding-top: 140px;
+    }
+}
+
+#slider-txt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+#search-txt, #search-btn {
+    border-radius: 0;
+    border: 0px;
+    height: 43px;
+}
+
+#search-btn {
+    width: 38px;
+    background: #fff url("../img/search_btn.png") no-repeat center 0;
+}
+
+#search-btn:hover {
+    width: 38px;
+    background: #fff url("../img/search_btn.png") no-repeat center bottom;
+}
+
+/* Регистрация */
+
+#reg-cont {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#reg {
+    max-width: 1024px !important;
+    height: 111px;
+}
+
+#reg-txt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 38px;
+    color: #8b8b8b;
+}
+
+#reg-col {
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    #reg-col {
+    height: 111px;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-align: center;
+    }
+    
+    #reg-txt {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 38px;
+    color: #8b8b8b;
+    width: 100%;
+    }
+    
+    #reg-btn {
+    padding: 0 46px 5px 46px !important;
+    max-width: 256px;
+    height: 62px;
+    background: #8fcddc;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 38px;
+    color: #fff;
+    }
+     
+}
+
+#reg-btn {
+    padding: 0 32px 5px 32px;
+    max-width: 256px;
+    height: 62px;
+    background: #8fcddc;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 38px;
+    color: #fff;
+}
+
+#reg-btn:hover {
+    background: #52909f;
+}
+
+/* Ссылки */
+
+#links {
+    max-width: 1024px !important;
+    height: 284px;
+}
+
+#links a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: #c4c4c4;
+}
+
+#links a:hover {
+    color: #52909f;
+}
+
+#links a:active {
+    color: #52909f;
+}
+
+#links a:focus {
+    color: #52909f;
+}
+
+#links-h1 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 26px;
+    color: #8a8a8a;
+}
+
+#link-col {
+    padding: 20px 50px 0 50px;
+}
+
+/* Подвал */
+
+#footer-cont {
+    background: #484242;
+    height: 44px;
+}
+
+#footer-cont p {
+    margin: 0px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #959292;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    #footer-cont p {
+    margin: 0px;
+    height: 44px;
+    padding-top: 8px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #959292;
+}
+}
